@@ -9,8 +9,12 @@
 
 	<title>Título</title>
 	
+	<link href="https://fonts.googleapis.com/css?family=Sulphur+Point:400,700&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Baskervville:400,400i&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/grid.css">
+<!-- 	<link rel="stylesheet" href="css/grid.css"> -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -18,39 +22,44 @@
 	
 	<!-- Header -->
 	
-	<header>
-	
-		<a href="index.html">
-			<img src="#" alt="Logotipo Bikcraft">
-		</a>
+	<header class="header">
+		<div class="container">
 		
-		<nav>
-			<ul>
-				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="produtos.html">Produtos</a></li>
-				<li><a href="portfolio.html">Portfólio</a></li>
-				<li><a href="contato.html">Contato</a></li>
-			</ul>
-		</nav>
-		
+			<a class="header_logo" href="index.html">
+				<img src="assets/logo/bikcraft.svg" alt="Logotipo Bikcraft">
+			</a>
+
+			<nav class="header_nav">
+				<ul>
+					<li><a class="btn_mobile" href="sobre.html">Sobre</a></li>
+					<li><a class="btn_mobile" href="produtos.html">Produtos</a></li>
+					<li><a class="btn_mobile" href="portfolio.html">Portfólio</a></li>
+					<li><a class="btn_mobile" href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+			
+		</div>
 	</header>
 	
 	<main>
 	
 		<!-- Hero -->
 	
-		<section>
-		
-			<h1>Bicicletas feitas a mão</h1>
-			
-			<figure>
-				<blockquote>
-					<p>"Não tenha nada em sua casa que você não considere útil ou acredita ser bonito."</p>
-				</blockquote>
-				<figcaption>William Morris</figcaption>
-			</figure>
-			
-			<a href="produtos.html">Orçamento</a>
+		<section class="hero">
+			<div class="container">
+
+				<h1 class="hero_title">Bicicletas feitas a mão</h1>
+
+				<figure>
+					<blockquote class="">
+						<p class="hero_quote line-up line-up_light line-down line-down_light">"Não tenha nada em sua casa que você não considere útil ou acredita ser bonito."</p>
+					</blockquote>
+					<figcaption class="hero_author">William Morris</figcaption>
+				</figure>
+
+				<a class="btn btn-light" href="produtos.html">Orçamento</a>
+
+			</div>
 		</section>
 		
 		<!-- Produtos -->
