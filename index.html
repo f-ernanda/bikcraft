@@ -28,10 +28,10 @@
 		
 		<nav class="header_nav">
 			<ul>
-				<li><a class="btn_mobile" href="sobre.html">Sobre</a></li>
-				<li><a class="btn_mobile" href="produtos.html">Produtos</a></li>
-				<li><a class="btn_mobile" href="portfolio.html">Portfólio</a></li>
-				<li><a class="btn_mobile" href="contato.html">Contato</a></li>
+				<li><a class="btn_mobile" href="index.html">Sobre</a></li>
+				<li><a class="btn_mobile" href="index.html">Produtos</a></li>
+				<li><a class="btn_mobile" href="index.html">Portfólio</a></li>
+				<li><a class="btn_mobile" href="index.html">Contato</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -48,7 +48,7 @@
 				</blockquote>
 				<figcaption class="hero_author">William Morris</figcaption>
 			</figure>
-			<a class="btn btn_light" href="produtos.html">Orçamento</a>
+			<a class="btn btn_light" href="index.html">Orçamento</a>
 		</section>
 		
 		<!-- Produtos -->
@@ -56,39 +56,42 @@
 		<section id="produtos">
 			<h2 class="line-down">Produtos</h2>
 			
-			<article class="products_card">
-				<div class="products_icon">
-					<img src="assets/icons/passeio.svg" alt="Ilustração de uma bicicleta de passeio">
-				</div>
-				<div class="products_info">
-					<h3 class="line-down">Passeio</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, esse.</p>
-				</div>
-			</article>
+			<div class="products">
+				<article class="products_card">
+					<div class="products_icon">
+						<img src="assets/icons/passeio.svg" alt="Ilustração de uma bicicleta de passeio">
+					</div>
+					<div class="products_info">
+						<h3 class="line-down">Passeio</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, esse.</p>
+					</div>
+				</article>
+
+				<article class="products_card">
+					<div class="products_icon">
+						<img src="assets/icons/esporte.svg" alt="Ilustração de uma bicicleta esportiva">
+					</div>
+					<div class="products_info">
+						<h3 class="line-down">Esporte</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, deleniti!</p>
+					</div>
+				</article>
+
+				<article class="products_card">
+					<div class="products_icon">
+						<img src="assets/icons/retro.svg" alt="Ilustração de uma bicicleta com design retrô">
+					</div>
+					<div class="products_info">
+						<h3 class="line-down">Retrô</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolor, aperiam? Obcaecati!</p>
+					</div>
+				</article>
+			</div>
 			
-			<article class="products_card">
-				<div class="products_icon">
-					<img src="assets/icons/esporte.svg" alt="Ilustração de uma bicicleta esportiva">
-				</div>
-				<div class="products_info">
-					<h3 class="line-down">Esporte</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, deleniti!</p>
-				</div>
-			</article>
-			
-			<article class="products_card">
-				<div class="products_icon">
-					<img src="assets/icons/retro.svg" alt="Ilustração de uma bicicleta com design retrô">
-				</div>
-				<div class="products_info">
-					<h3 class="line-down">Retrô</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolor, aperiam? Obcaecati!</p>
-				</div>
-			</article>
 				
 			<div class="cta">
 				<p>Veja mais detalhes dos nossos produtos</p>
-				<a class="btn" href="produtos.html">Produtos</a>
+				<a class="btn" href="index.html">Produtos</a>
 			</div>
 		</section>
 		
@@ -99,37 +102,24 @@
 			
 			<figure>
 				<picture>
-					<source srcset="assets/photos/bike-passeio-mobile.jpg" media="(max-width: 599px)">
-					<source srcset="#, # 2x" media="(max-width: 899px)">
-					<source srcset="#, # 2x" media="(max-width: 1199px)">
-					<source srcset="#, # 2x" media="(max-width: 1799px)">
-					<img srcset="#, # 2x" alt="#">
+					<source srcset="assets/photos/bike-passeio-mobile.jpg" media="(max-width: 899px)">
+					<img srcset="assets/photos/bike-passeio-desktop.jpg" alt="Bicicleta de passeio sob a luz do sol, com uma praia de fundo">
 				</picture>
 			</figure>
 				
-			<figure>
-				<picture>
-					<source srcset="assets/photos/bike-esporte-mobile.jpg" media="(max-width: 599px)">
-					<source srcset="#, # 2x" media="(max-width: 899px)">
-					<source srcset="#, # 2x" media="(max-width: 1199px)">
-					<source srcset="#, # 2x" media="(max-width: 1799px)">
-					<img srcset="#, # 2x" alt="#">
-				</picture>
-			</figure>
-				
-			<figure>	
-				<picture>
-					<source srcset="assets/photos/bike-retro-mobile.jpg" media="(max-width: 599px)">
-					<source srcset="#, # 2x" media="(max-width: 899px)">
-					<source srcset="#, # 2x" media="(max-width: 1199px)">
-					<source srcset="#, # 2x" media="(max-width: 1799px)">
-					<img srcset="#, # 2x" alt="#">
-				</picture>
-			</figure>
+			<div class="portfolio_group">
+				<figure class="portfolio_sport-bicycle">
+					<img src="assets/photos/bike-esporte-desktop.jpg" alt="Bicicleta esportiva em um gramado em uma montanha">
+				</figure>
+
+				<figure class="portfolio_vintage-bicycle">	
+					<img srcset="assets/photos/bike-retro-desktop.jpg" alt="Bicicleta retrô com flores no guidão, com uma cidade de fundo">
+				</figure>
+			</div>
 			
 			<div class="cta">
 				<p>Conheça melhor o nosso trabalho</p>
-				<a class="btn btn_light" href="portfoilo.html">Portfólio</a>
+				<a class="btn btn_light" href="index.html">Portfólio</a>
 			</div>
 		</section>
 		
@@ -140,18 +130,26 @@
 			
 			<img src="assets/logo/bikcraft-alt.svg" alt="Logotipo Bikcraft">
 			
-			<h3 class="line-down">Durabilidade</h3>
-			<p class="about-us_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum necessitatibus aliquid excepturi quis veritatis facere obcaecati, natus perferendis laudantium repellendus.</p>
-			
-			<h3 class="line-down">Design</h3>
-			<p class="about-us_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate praesentium, tenetur consequatur magnam dolore aperiam cumque optio tempore officia soluta, placeat, cum, possimus impedit!</p>
-			
-			<h3 class="line-down">Sustentabilidade</h3>
-			<p class="about-us_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eaque, voluptates excepturi expedita veritatis laudantium quisquam quia inventore. Enim odit sint, culpa ut nobis non illo consequatur explicabo.</p>
+			<div class="about-us_standards">
+				<article class="about-us_info">
+					<h3 class="line-down">Durabilidade</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum necessitatibus aliquid excepturi quis veritatis facere obcaecati, natus perferendis laudantium repellendus.</p>
+				</article>
+				
+				<article class="about-us_info">
+					<h3 class="line-down">Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate praesentium, tenetur consequatur magnam dolore aperiam cumque optio tempore officia soluta, placeat, cum, possimus impedit!</p>
+				</article>
+				
+				<article class="about-us_info">
+					<h3 class="line-down">Sustentabilidade</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eaque, voluptates excepturi expedita veritatis laudantium quisquam quia inventore. Enim odit sint, culpa ut nobis non illo consequatur explicabo.</p>
+				</article>
+			</div>
 			
 			<div class="cta">
 				<p>Saiba mais detalhes sobre a nossa empresa</p>
-				<a class="btn" href="sobre.html">Bikcraft</a>
+				<a class="btn" href="index.html">Bikcraft</a>
 			</div>
 		</section>
 		
@@ -169,30 +167,32 @@
 		<!-- Footer -->
 		
 		<footer class="footer">
-			<article>
-				<h3 class="line-down line-down_light line-down_left">Nossa história</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est aliquid, ipsum reprehenderit, necessitatibus dolorem!</p>
-			</article>
+			<div class="footer_info">
+				<article class="footer_about-us">
+					<h3 class="line-down line-down_light line-down_left">Nossa história</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est aliquid, ipsum reprehenderit, necessitatibus dolorem!</p>
+				</article>
+
+				<address class="footer_address">
+					<h3 class="line-down line-down_light line-down_left">Contato</h3>
+					<ul>
+						<li><a href="tel:1199999999">11 9999-9999</a></li>
+						<li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+						<li>Santo André - SP</li>
+					</ul>
+				</address>
+
+				<article class="footer_media">
+					<h3 class="line-down line-down_light line-down_left">Redes Sociais</h3>
+					<ul  class="footer_social">
+						<li><a href="https://www.facebook.com/"><img src="assets/social/facebook.svg" alt="Facebook"></a></li>
+						<li><a href="https://www.instagram.com/?hl=pt-br"><img src="assets/social/instagram.svg" alt="Instagram"></a></li>
+						<li><a href="https://twitter.com/"><img src="assets/social/twitter.svg" alt="Twitter"></a></li>
+					</ul>
+				</article>
+			</div>
 			
-			<address>
-				<h3 class="line-down line-down_light line-down_left">Contato</h3>
-				<ul>
-					<li><a href="tel:1199999999">11 9999-9999</a></li>
-					<li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
-					<li>Santo André - SP</li>
-				</ul>
-			</address>
-			
-			<article>
-				<h3 class="line-down line-down_light line-down_left">Redes Sociais</h3>
-				<ul  class="footer_social">
-					<li><a href="https://www.facebook.com/"><img src="assets/social/facebook.svg" alt="Facebook"></a></li>
-					<li><a href="https://www.instagram.com/?hl=pt-br"><img src="assets/social/instagram.svg" alt="Instagram"></a></li>
-					<li><a href="https://twitter.com/"><img src="assets/social/twitter.svg" alt="Twitter"></a></li>
-				</ul>
-			</article>
-			
-			<div class=copy>
+			<div class="copy">
 				<p>
 					<small>Bikcraft 2019 - Alguns direitos reservados.</small>
 				</p>

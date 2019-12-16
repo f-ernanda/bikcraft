@@ -145,8 +145,8 @@ Layout
 .hero_author {
 	font-size: 2rem;
 	font-weight: bold;
-	margin-bottom:  4rem;
 	letter-spacing: .1em;
+	margin-bottom:  4rem;
 	text-align: right;
 }
 
@@ -158,10 +158,6 @@ Layout
 	width: 70%;
 }
 
-.products_card p{
-	margin: 2rem auto;
-}
-
 .products_icon {
 	background-color: var(--color-base-dark);
 	padding: 3rem;
@@ -171,16 +167,25 @@ Layout
 	padding: 1rem;
 }
 
+.products_info p{
+	margin: 2rem auto;
+}
+
 /* Portfolio */
 
 .portfolio {
 	background-color: var(--color-base-dark);
-	color: var(--color-base-light)
+	color: var(--color-base-light);
+	padding: 5rem;
+}
+
+.portfolio figure {
+	margin: 1rem auto;
 }
 
 /* About us */
 
-.about-us_text {
+.about-us_info {
 	margin: 1rem 2rem 4rem;
 }
 
@@ -209,8 +214,8 @@ Layout
 	text-align: left;
 }
 
-.footer article,
-.footer address {
+.footer_info article,
+.footer_info address {
 	padding: 2rem 2rem;	
 }
 
@@ -252,6 +257,10 @@ Layout
 	padding: 1rem 2rem;
 }
 
+.footer_social img {
+	min-width: 3rem;
+}
+
 .footer_social a:hover {
 	border: 3px solid var(--color-primary);
 }
@@ -271,12 +280,12 @@ Modules
 */
 
 .line-up::before {
+	background-color: var(--color-base-dark);
 	content: " ";
 	display: table;
-	width: 6rem;
 	height: 3px;
-	background-color: var(--color-base-dark);
 	margin: .8rem auto;
+	width: 6rem;
 }
 
 .line-up_light::before {
@@ -284,12 +293,12 @@ Modules
 }
 
 .line-down::after {
+	background-color: var(--color-base-dark);
 	content: " ";
 	display: table;
-	width: 6rem;
 	height: 3px;
-	background-color: var(--color-base-dark);
 	margin: 1rem auto;
+	width: 6rem;
 }
 
 .line-down_light::after {
@@ -340,3 +349,150 @@ State
 		border: 3px solid var(--color-base-light);
 		color: var(--color-base-light);
 	}
+
+/* 
+--------------------
+Medias
+--------------------
+*/
+
+/* Tablets - Portrait */
+
+@media only screen and (min-width: 600px) {
+	
+	.header_nav li {
+		flex: 1 1 25%;
+	}
+	
+	.hero_quote {
+		margin: auto;
+		max-width: 40rem;
+	}
+	
+	.hero_author {
+		text-align: center;
+	}
+	
+	.products_card {
+		width: 50%;
+	}
+	
+	.about-us_info,
+	.quote p {
+		margin: auto 10rem;
+	}
+	
+	.footer_info p {
+		width: 50%; 
+	}
+	
+	.footer_social {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+	
+	.footer_social li {
+		flex-grow: 0;
+	}
+	
+}
+
+/* Desktop*/
+
+@media only screen and (min-width: 900px) {
+	
+	.header {
+		display: flex;
+		justify-content: space-around;
+		padding: 1rem;
+	}
+	
+	.header_logo {
+		display: block;
+		margin: auto 3rem;
+	}
+	
+	.header_nav li {
+		flex: 1;
+		flex-wrap: nowrap;
+	}
+	
+	.products {
+		display: flex;
+	}
+	
+	.products_card {
+		margin: 1rem 2rem;
+	}
+	
+	.portfolio_group {
+		display: flex;
+	}
+	
+	.portfolio_sport-bicycle {
+		padding-right: 1rem;
+	}
+	
+	.portfolio_vintage-bicycle {
+		padding-left: 1rem
+	}
+	
+	.about-us_standards {
+		display: flex;
+	}
+	
+	.about-us_info {
+		flex: 1;
+		margin: 1rem 2rem;
+	}
+	
+ .footer_info {
+		display: flex;
+	}
+	
+	.footer_about-us {
+		flex: 2;
+	}
+	
+	.footer_address,
+	.footer_media {
+		flex: 1;
+	}
+	
+	.footer_info p {
+		width: 80%;
+	}
+	
+	.footer_social a {
+		margin: auto 1rem auto 0;
+	}
+	
+	.btn_mobile {
+		border: 3px solid	transparent;
+	}
+	
+	.btn_mobile:hover {
+		border: 3px solid	transparent;
+	}
+	
+}
+
+/* Desktop - Wide */
+
+@media only screen and (min-width: 1800px) {
+	
+	.products_card {
+		margin: 5rem auto;
+		max-width: 50rem; 
+	}
+	
+	.about-us_info {
+		max-width: 50rem; 
+		margin: 5rem auto;
+	}
+	
+	.footer_about-us {
+		margin-left: 10rem; 
+	}
+	
+}
